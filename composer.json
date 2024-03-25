@@ -13,7 +13,7 @@
         "php": "^8.1",
         "php-forge/awesome-widget": "^0.1",
         "ui-awesome/html-core-component": "^1.0@dev",
-        "ui-awesome/html-helper": "1.0.x-dev as 0.1",
+        "ui-awesome/html-helper": "^0.1",
         "ui-awesome/html-svg":"^0.1"
     },
     "require-dev": {
