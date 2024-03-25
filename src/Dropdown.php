@@ -22,10 +22,10 @@ final class Dropdown extends AbstractDropdown
      *
      * @return self The class instance that implements the fluent interface.
      */
-    public function definition(string $definition, string $type): self
+    public function definition(string $definition, string $color): self
     {
         $definition = match ($definition) {
-            'default' => Defaults::definition($type),
+            'default' => Defaults::definition($color),
             default => throw new \InvalidArgumentException(
                 sprintf(
                     'Invalid definition: "%s". Available definitions: "default".',

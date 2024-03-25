@@ -14,7 +14,7 @@ final class ExceptionTest extends \PHPUnit\Framework\TestCase
         $this->expectExceptionMessage(
             'Invalid definition: "noexist". Available definitions: "alert", "dropdown", "menu", "menu-dropdown".'
         );
-        
+
         Toggle::widget()->definition('noexist', '');
     }
 }
