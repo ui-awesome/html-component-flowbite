@@ -47,8 +47,6 @@ final class Toggle extends AbstractToggle
         };
 
         /** @var self $toggle */
-        $toggle = SimpleFactory::configure($this, $definition);
-
-        return $toggle;
+        return SimpleFactory::configure($this, $definition);
     }
 }

@@ -30,7 +30,7 @@ final class Defaults
     {
         return [
             'class()' => [
-                CssClass::render(self::TYPES_ALERT[$type], self::BASE_CLASS, self::TYPES_ALERT)
+                CssClass::render(self::TYPES_ALERT[$type], self::BASE_CLASS, self::TYPES_ALERT),
             ],
         ];
     }

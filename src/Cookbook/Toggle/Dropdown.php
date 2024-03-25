@@ -9,7 +9,7 @@ use UIAwesome\Html\Helper\CssClass;
 final class Dropdown
 {
     private const BASE_CLASS = 'text-white bg-%1$s-700 hover:bg-%1$s-800 focus:ring-4 focus:outline-none focus:ring-%1$s-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-%1$s-600 dark:hover:bg-%1$s-700 dark:focus:ring-%1$s-800';
-    private const COLOR_DROPDOWN =  ['blue', 'gray', 'green', 'red', 'yellow'];
+    private const COLOR_DROPDOWN = ['blue', 'gray', 'green', 'red', 'yellow'];
 
     /**
      * Define the dropdown definition.
