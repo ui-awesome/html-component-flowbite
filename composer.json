@@ -1,31 +1,37 @@
 {
-    "name": "yii-tools/template",
+    "name": "ui-awesome/html-component-flowbite",
     "type": "library",
-    "description": "template",
+    "description": "UI Awesome HTML Component Flowbite for PHP.",
     "keywords": [
-        "template"
+        "ui-awesome",
+        "html-component",
+        "flowbite",
+        "php"
     ],
     "license": "mit",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "ui-awesome/html-core-component": "^1.0@dev",
+        "ui-awesome/html-helper": "1.0.x-dev as 0.1",
+        "ui-awesome/html-svg":"^0.1"
     },
     "require-dev": {
         "maglnet/composer-require-checker": "^4.7",
+        "php-forge/support": "^0.1",
         "phpunit/phpunit": "^10.5",
         "roave/infection-static-analysis-plugin": "^1.34",
         "symplify/easy-coding-standard": "^12.1",
-        "vimeo/psalm": "^5.19"
+        "ui-awesome/html":"^0.2",
+        "vimeo/psalm": "^5.20"
     },
     "autoload": {
         "psr-4": {
-            "Template\\": "src"
+            "UIAwesome\\Html\\Component\\Flowbite\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Template\\Tests\\": "tests"
+            "UIAwesome\\Html\\Component\\Flowbite\\Tests\\": "tests"
         }
     },
     "extra": {
