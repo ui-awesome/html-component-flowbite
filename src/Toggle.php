@@ -29,7 +29,7 @@ final class Toggle extends AbstractToggle
      * Available types: 'danger', 'dark', 'info', 'success', 'warning' for 'alert' definition.
      * Available types: 'blue', 'gray', 'green', 'red', 'yellow' for 'dropdown' definition.
      *
-     * @return Toggle The class instance that implements the fluent interface.
+     * @return self A new instance or clone of the current object with the applied definition.
      */
     public function definition(string $definition, string $type = ''): self
     {

@@ -26,7 +26,7 @@ final class Alert extends AbstractAlert
      * @param string $definition The alert definition. Available definitions: 'default', 'dismissible'.
      * @param string $type The alert type. Available types: 'danger', 'dark', 'info', 'success', 'warning'.
      *
-     * @return self The class instance that implements the fluent interface.
+     * @return self A new instance or clone of the current object with the applied definition.
      */
     public function definition(string $definition, string $type): self
     {

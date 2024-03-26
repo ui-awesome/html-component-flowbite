@@ -20,7 +20,7 @@ final class Dropdown extends AbstractDropdown
      * @param string $definition The dropdown definition. Available definitions: 'default'.
      * @param string $color The toggle dropdown color. Available colors: 'blue', 'gray', 'green', 'red', 'yellow'.
      *
-     * @return self The class instance that implements the fluent interface.
+     * @return self A new instance or clone of the current object with the applied definition.
      */
     public function definition(string $definition, string $color): self
     {
