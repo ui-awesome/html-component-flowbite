@@ -17,14 +17,14 @@ final class Language
      *
      * @psalm-return array<string, mixed> The dropdown definition.
      */
-    public static function definitions(string $type): array
+    public static function definitions(string $color): array
     {
         return [
             'class()' => ['z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700'],
             'linkActiveClass()' => ['bg-blue-500 text-white block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'],
             'linkClass()' => ['block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'],
             'listClass()' => ['py-2 text-sm text-gray-700 dark:text-gray-200'],
-            'toggle()' => [Toggle::widget()->definition('selector-language', $type)],
+            'toggle()' => [Toggle::widget()->definition('selector-language', $color)],
         ];
     }
 }
