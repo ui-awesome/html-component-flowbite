@@ -24,7 +24,7 @@ final class Language
             'linkActiveClass()' => ['bg-blue-500 text-white block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'],
             'linkClass()' => ['block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'],
             'listClass()' => ['py-2 text-sm text-gray-700 dark:text-gray-200'],
-            'toggle()' => [Toggle::widget()->definition('selector-language', $type)]
+            'toggle()' => [Toggle::widget()->definition('selector-language', $type)],
         ];
     }
 }
