@@ -10,6 +10,7 @@ use UIAwesome\Html\{
     Component\Flowbite\Cookbook\Toggle\Dropdown,
     Component\Flowbite\Cookbook\Toggle\Menu,
     Component\Flowbite\Cookbook\Toggle\MenuDropdown,
+    Component\Flowbite\Cookbook\Toggle\SelectorLanguage,
     Core\Component\AbstractToggle
 };
 
@@ -38,6 +39,7 @@ final class Toggle extends AbstractToggle
             'dropdown' => Dropdown::definition($type),
             'menu' => Menu::definition(),
             'menu-dropdown' => MenuDropdown::definition(),
+            'selector-language' => SelectorLanguage::definition($type),
             default => throw new \InvalidArgumentException(
                 sprintf(
                     'Invalid definition: "%s". Available definitions: "alert", "dropdown", "menu", "menu-dropdown".',

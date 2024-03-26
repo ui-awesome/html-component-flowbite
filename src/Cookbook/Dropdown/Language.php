@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types=1);
+
+namespace UIAwesome\Html\Component\Flowbite\Cookbook\Dropdown;
+
+use UIAwesome\Html\Component\Flowbite\Toggle;
+
+final class Language
+{
+    /**
+     * Define the dropdown selection language definition.
+     *
+     * @param string $color The toggle dropdown color. Available colors: 'blue', 'gray', 'green', 'red', 'yellow'.
+     *
+     * @return array The dropdown definition.
+     *
+     * @psalm-return array<string, mixed> The dropdown definition.
+     */
+    public static function definitions(string $color): array
+    {
+        return [
+            'class()' => ['z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700'],
+            'linkActiveClass()' => ['bg-blue-500 text-white block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'],
+            'linkClass()' => ['block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'],
+            'listClass()' => ['py-2 text-sm text-gray-700 dark:text-gray-200'],
+            'toggle()' => [Toggle::widget()->definition('selector-language', $color)],
+        ];
+    }
+}
