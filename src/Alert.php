@@ -41,7 +41,6 @@ final class Alert extends AbstractAlert
             ),
         };
 
-        /** @var self $alert */
         return SimpleFactory::configure($this, $definition);
     }
 }

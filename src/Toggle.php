@@ -29,9 +29,9 @@ final class Toggle extends AbstractToggle
      * Available types: 'danger', 'dark', 'info', 'success', 'warning' for 'alert' definition.
      * Available types: 'blue', 'gray', 'green', 'red', 'yellow' for 'dropdown' definition.
      *
-     * @return self The class instance that implements the fluent interface.
+     * @return Toggle The class instance that implements the fluent interface.
      */
-    public function definition(string $definition, string $type = ''): self
+    public function definition(string $definition, string $type = ''): Toggle
     {
         $definition = match ($definition) {
             'alert' => Alert::definition($type),
@@ -46,7 +46,6 @@ final class Toggle extends AbstractToggle
             ),
         };
 
-        /** @var self $toggle */
         return SimpleFactory::configure($this, $definition);
     }
 }

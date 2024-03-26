@@ -34,7 +34,6 @@ final class Dropdown extends AbstractDropdown
             ),
         };
 
-        /** @var self $alert */
         return SimpleFactory::configure($this, $definition);
     }
 }
