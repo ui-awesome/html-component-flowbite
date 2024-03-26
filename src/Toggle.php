@@ -31,7 +31,7 @@ final class Toggle extends AbstractToggle
      *
      * @return Toggle The class instance that implements the fluent interface.
      */
-    public function definition(string $definition, string $type = ''): Toggle
+    public function definition(string $definition, string $type = ''): self
     {
         $definition = match ($definition) {
             'alert' => Alert::definition($type),
