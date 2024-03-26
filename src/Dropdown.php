@@ -5,7 +5,11 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Component\Flowbite;
 
 use PHPForge\Widget\Factory\SimpleFactory;
-use UIAwesome\Html\{Component\Flowbite\Cookbook\Dropdown\Defaults, Core\Component\AbstractDropdown};
+use UIAwesome\Html\{
+    Component\Flowbite\Cookbook\Dropdown\Defaults,
+    Component\Flowbite\Cookbook\Dropdown\Language,
+    Core\Component\AbstractDropdown
+};
 
 /**
  * A simple dropdown component for displaying a list of links.
@@ -26,6 +30,7 @@ final class Dropdown extends AbstractDropdown
     {
         $definition = match ($definition) {
             'default' => Defaults::definition($color),
+            'language' => Language::definitions($color),
             default => throw new \InvalidArgumentException(
                 sprintf(
                     'Invalid definition: "%s". Available definitions: "default".',
