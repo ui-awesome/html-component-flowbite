@@ -8,6 +8,15 @@ use UIAwesome\Html\Component\Flowbite\Toggle;
 
 final class Language
 {
+    /**
+     * Define the dropdown selection language definition.
+     *
+     * @param string $color The toggle dropdown color. Available colors: 'blue', 'gray', 'green', 'red', 'yellow'.
+     *
+     * @return array The dropdown definition.
+     *
+     * @psalm-return array<string, mixed> The dropdown definition.
+     */
     public static function definitions(string $type): array
     {
         return [
