@@ -12,13 +12,13 @@ final class SelectorLanguage
     private const COLOR_DROPDOWN = ['blue', 'gray', 'green', 'red', 'yellow'];
 
     /**
-     * Define the dropdown definition.
+     * Define the toggle selector language definition.
      *
      * @param string $type The dropdown type. Available types: 'blue', 'gray', 'green', 'red', 'yellow'.
      *
-     * @return array The dropdown definition.
+     * @return array The toggle selector language definition.
      *
-     * @psalm-return array<string, mixed> The dropdown definition.
+     * @psalm-return array<string, mixed> The toggle selector language definition.
      */
     public static function definition(string $type): array
     {

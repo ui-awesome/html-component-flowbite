@@ -11,7 +11,7 @@ final class Language
     /**
      * Define the dropdown selection language definition.
      *
-     * @param string $color The toggle dropdown color. Available colors: 'blue', 'gray', 'green', 'red', 'yellow'.
+     * @param string $color The dropdown color. Available colors: 'blue', 'gray', 'green', 'red', 'yellow'.
      *
      * @return array The dropdown definition.
      *
