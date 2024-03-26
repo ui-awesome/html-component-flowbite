@@ -34,7 +34,7 @@ The preferred way to install this extension is through [composer](https://getcom
 Either run
 
 ```shell
-composer require --prefer-dist ui-awesome/html-component-flowbite:^1,0@dev
+composer require --prefer-dist ui-awesome/html-component-flowbite:^1.0@dev
 ```
 
 or add
