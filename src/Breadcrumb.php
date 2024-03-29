@@ -6,8 +6,6 @@ namespace UIAwesome\Html\Component\Flowbite;
 
 use UIAwesome\Html\{Component\Flowbite\Cookbook\Breadcrumb\Defaults, Core\Component\AbstractBreadcrumb};
 
-use function array_merge;
-
 /**
  * A simple breadcrumb component for displaying the current page location.
  *
@@ -15,8 +13,18 @@ use function array_merge;
  */
 final class Breadcrumb extends AbstractBreadcrumb
 {
-    protected function loadDefaultDefinitions(): array
+    /**
+     * The cookbook definitions for the breadcrumb component.
+     *
+     * @param string $option The option to load the cookbook for.
+     * Available definitions: 'default'.
+     *
+     * @return array The breadcrumb cookbook definitions.
+     */
+    protected function getCookbooks(string $option): array
     {
-        return array_merge(parent::loadDefaultDefinitions(), Defaults::definition());
+        return [
+            'default' => Defaults::definition(),
+        ];
     }
 }

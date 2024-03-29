@@ -10,8 +10,6 @@ final class Menu
      * Define the menu definition.
      *
      * @return array The menu definition.
-     *
-     * @psalm-return array<string, mixed> The menu definition.
      */
     public static function definition(): array
     {

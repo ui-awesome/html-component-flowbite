@@ -12,10 +12,8 @@ final class SelectorTheme
      * Define the toggle selector theme definition.
      *
      * @return array The toggle selector theme definition.
-     *
-     * @psalm-return array<string, mixed> The toggle selector theme definition.
      */
-    public static function definitions(): array
+    public static function definition(): array
     {
         return [
             'class()' => ['text-gray-700 hover:text-gray-900 dark:hover:text-white dark:text-gray-400'],

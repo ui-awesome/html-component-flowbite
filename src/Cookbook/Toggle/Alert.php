@@ -23,14 +23,14 @@ final class Alert
      * @param string $type The alert type. Available types: 'danger', 'dark', 'info', 'success', 'warning'.
      *
      * @return array The alert definition.
-     *
-     * @psalm-return array<string, mixed> The alert definition.
      */
     public static function definition(string $type): array
     {
+        $type = self::TYPES_ALERT[$type] ?? 'gray';
+
         return [
             'ariaLabel()' => ['Close'],
-            'class()' => [CssClass::render(self::TYPES_ALERT[$type], self::BASE_CLASS, self::TYPES_ALERT)],
+            'class()' => [CssClass::render($type, self::BASE_CLASS, self::TYPES_ALERT)],
             'dataDismissTarget()' => [],
             'iconFilePath()' => [dirname(__DIR__, 2) . '/svg/circle-close.svg'],
             'iconTag()' => ['svg'],

@@ -23,8 +23,6 @@ final class Dismissible
      * @param string $type The alert type. Available types: 'danger', 'dark', 'info', 'success', 'warning'.
      *
      * @return array The alert definition.
-     *
-     * @psalm-return array<string, mixed> The alert definition.
      */
     public static function definition(string $type): array
     {
@@ -32,7 +30,7 @@ final class Dismissible
             'class()' => [CssClass::render(self::TYPES_ALERT[$type], self::BASE_CLASS, self::TYPES_ALERT)],
             'containerClass()' => ['ml-3 text-sm font-medium'],
             'containerTag()' => [],
-            'toggle()' => [Toggle::widget()->definition('alert', $type)],
+            'toggle()' => [Toggle::widget()->cookbook('alert', $type)],
         ];
     }
 }
