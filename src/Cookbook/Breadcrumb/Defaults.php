@@ -8,6 +8,11 @@ use UIAwesome\Html\Graphic\Svg;
 
 final class Defaults
 {
+    /**
+     * Define the breadcrumb definition.
+     *
+     * @return array The breadcrumb definition.
+     */
     public static function definition(): array
     {
         return [

@@ -40,7 +40,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
                     A::widget()->class('font-semibold underline hover:no-underline')->content('example link')->href('#'),
                     '. Give it a click if you like.',
                 )
-                ->definition('dismissible', 'danger')
+                ->cookbook('dismissible', 'danger')
                 ->id('alert_658fec01ac6cf')
                 ->prefix(Svg::widget()->filePath(dirname(__DIR__, 2) . '/src/svg/circle-exclamation.svg'))
                 ->render()
@@ -69,7 +69,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
                     '. Give it a click if you like.',
                 )
                 ->id('alert_658fec01ac6cf')
-                ->definition('dismissible', 'dark')
+                ->cookbook('dismissible', 'dark')
                 ->prefix(Svg::widget()->filePath(dirname(__DIR__, 2) . '/src/svg/circle-exclamation.svg'))
                 ->render()
         );
@@ -96,7 +96,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
                     A::widget()->class('font-semibold underline hover:no-underline')->content('example link')->href('#'),
                     '. Give it a click if you like.',
                 )
-                ->definition('dismissible', 'info')
+                ->cookbook('dismissible', 'info')
                 ->id('alert_658fec01ac6cf')
                 ->prefix(Svg::widget()->filePath(dirname(__DIR__, 2) . '/src/svg/circle-exclamation.svg'))
                 ->render()
@@ -126,7 +126,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
                 )
                 ->id('alert_658fec01ac6cf')
                 ->prefix(Svg::widget()->filePath(dirname(__DIR__, 2) . '/src/svg/circle-exclamation.svg'))
-                ->definition('dismissible', 'success')
+                ->cookbook('dismissible', 'success')
                 ->render()
         );
     }
@@ -152,7 +152,7 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
                     A::widget()->class('font-semibold underline hover:no-underline')->content('example link')->href('#'),
                     '. Give it a click if you like.',
                 )
-                ->definition('dismissible', 'warning')
+                ->cookbook('dismissible', 'warning')
                 ->id('alert_658fec01ac6cf')
                 ->prefix(Svg::widget()->filePath(dirname(__DIR__, 2) . '/src/svg/circle-exclamation.svg'))
                 ->render()

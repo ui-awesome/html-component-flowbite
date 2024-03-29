@@ -22,7 +22,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
                     Span::widget()->class('font-medium')->content('Danger alert!.'),
                     ' Change a few things up and try submitting again.',
                 )
-                ->definition('default', 'danger')
+                ->cookbook('default', 'danger')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -41,7 +41,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
                     Span::widget()->class('font-medium')->content('Dark alert!.'),
                     ' Change a few things up and try submitting again.',
                 )
-                ->definition('default', 'dark')
+                ->cookbook('default', 'dark')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -60,7 +60,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
                     Span::widget()->class('font-medium')->content('Info alert!.'),
                     ' Change a few things up and try submitting again.',
                 )
-                ->definition('default', 'info')
+                ->cookbook('default', 'info')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -79,7 +79,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
                     Span::widget()->class('font-medium')->content('Success alert!.'),
                     ' Change a few things up and try submitting again.',
                 )
-                ->definition('default', 'success')
+                ->cookbook('default', 'success')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );
@@ -98,7 +98,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
                     Span::widget()->class('font-medium')->content('Warning alert!.'),
                     ' Change a few things up and try submitting again.',
                 )
-                ->definition('default', 'warning')
+                ->cookbook('default', 'warning')
                 ->id('alert_658fec01ac6cf')
                 ->render()
         );

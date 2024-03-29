@@ -52,6 +52,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             </nav>
             HTML,
             Breadcrumb::widget()
+                ->cookbook('default')
                 ->currentPath('flowbite')
                 ->id('breadcrumb_658fec01ac6cf')
                 ->items(

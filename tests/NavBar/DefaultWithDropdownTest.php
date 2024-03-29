@@ -78,6 +78,7 @@ final class DefaultWithDropdownTest extends \PHPUnit\Framework\TestCase
                 ->brandLink('https://flowbite.com/')
                 ->brandImage('<img class="h-8" src="https://flowbite.com/docs/images/logo.svg" alt="Flowbite">')
                 ->brandText('<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>')
+                ->cookbook('default')
                 ->menu(
                     Menu::widget()
                         ->currentPath('/')

@@ -10,8 +10,6 @@ final class MenuDropdown
      * Define the menu dropdown definition.
      *
      * @return array The menu dropdown definition.
-     *
-     * @psalm-return array<string, mixed> The menu dropdown definition.
      */
     public static function definition(): array
     {
