@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Component\Flowbite\Tests\Alert;
 
 use PHPForge\Support\Assert;
-use UIAwesome\Html\{Component\Flowbite\Alert, Graphic\Svg, Textual\A};
+use UIAwesome\Html\{Component\Flowbite\Alert, Graphic\Svg};
+use UIAwesome\Html\Core\HTMLBuilder;
 
 /**
  * Alert component with Flowbite dismiss button.
@@ -37,7 +38,11 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             Alert::widget()
                 ->content(
                     'A simple danger alert with an ',
-                    A::widget()->class('font-semibold underline hover:no-underline')->content('example link')->href('#'),
+                    HTMLBuilder::createTag(
+                        'a',
+                        'example link',
+                        ['class' => 'font-semibold underline hover:no-underline', 'href' => '#']
+                    ),
                     '. Give it a click if you like.',
                 )
                 ->cookbook('dismissible', 'danger')
@@ -65,7 +70,11 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             Alert::widget()
                 ->content(
                     'A simple dark alert with an ',
-                    A::widget()->class('font-semibold underline hover:no-underline')->content('example link')->href('#'),
+                    HTMLBuilder::createTag(
+                        'a',
+                        'example link',
+                        ['class' => 'font-semibold underline hover:no-underline', 'href' => '#']
+                    ),
                     '. Give it a click if you like.',
                 )
                 ->id('alert_658fec01ac6cf')
@@ -93,7 +102,11 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             Alert::widget()
                 ->content(
                     'A simple dark info with an ',
-                    A::widget()->class('font-semibold underline hover:no-underline')->content('example link')->href('#'),
+                    HTMLBuilder::createTag(
+                        'a',
+                        'example link',
+                        ['class' => 'font-semibold underline hover:no-underline', 'href' => '#']
+                    ),
                     '. Give it a click if you like.',
                 )
                 ->cookbook('dismissible', 'info')
@@ -121,7 +134,11 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             Alert::widget()
                 ->content(
                     'A simple success info with an ',
-                    A::widget()->class('font-semibold underline hover:no-underline')->content('example link')->href('#'),
+                    HTMLBuilder::createTag(
+                        'a',
+                        'example link',
+                        ['class' => 'font-semibold underline hover:no-underline', 'href' => '#']
+                    ),
                     '. Give it a click if you like.',
                 )
                 ->id('alert_658fec01ac6cf')
@@ -149,7 +166,11 @@ final class DismissTest extends \PHPUnit\Framework\TestCase
             Alert::widget()
                 ->content(
                     'A simple warning info with an ',
-                    A::widget()->class('font-semibold underline hover:no-underline')->content('example link')->href('#'),
+                    HTMLBuilder::createTag(
+                        'a',
+                        'example link',
+                        ['class' => 'font-semibold underline hover:no-underline', 'href' => '#']
+                    ),
                     '. Give it a click if you like.',
                 )
                 ->cookbook('dismissible', 'warning')
