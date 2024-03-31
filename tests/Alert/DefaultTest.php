@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace UIAwesome\Html\Component\Flowbite\Tests\Alert;
 
 use PHPForge\Support\Assert;
-use UIAwesome\Html\{Component\Flowbite\Alert, Textual\Span};
+use UIAwesome\Html\{Component\Flowbite\Alert, Core\HTMLBuilder};
 
 final class DefaultTest extends \PHPUnit\Framework\TestCase
 {
@@ -19,7 +19,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content(
-                    Span::widget()->class('font-medium')->content('Danger alert!.'),
+                    HTMLBuilder::createTag('span', 'Danger alert!.', ['class' => 'font-medium']),
                     ' Change a few things up and try submitting again.',
                 )
                 ->cookbook('default', 'danger')
@@ -38,7 +38,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content(
-                    Span::widget()->class('font-medium')->content('Dark alert!.'),
+                    HTMLBuilder::createTag('span', 'Dark alert!.', ['class' => 'font-medium']),
                     ' Change a few things up and try submitting again.',
                 )
                 ->cookbook('default', 'dark')
@@ -57,7 +57,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content(
-                    Span::widget()->class('font-medium')->content('Info alert!.'),
+                    HTMLBuilder::createTag('span', 'Info alert!.', ['class' => 'font-medium']),
                     ' Change a few things up and try submitting again.',
                 )
                 ->cookbook('default', 'info')
@@ -76,7 +76,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content(
-                    Span::widget()->class('font-medium')->content('Success alert!.'),
+                    HTMLBuilder::createTag('span', 'Success alert!.', ['class' => 'font-medium']),
                     ' Change a few things up and try submitting again.',
                 )
                 ->cookbook('default', 'success')
@@ -95,7 +95,7 @@ final class DefaultTest extends \PHPUnit\Framework\TestCase
             HTML,
             Alert::widget()
                 ->content(
-                    Span::widget()->class('font-medium')->content('Warning alert!.'),
+                    HTMLBuilder::createTag('span', 'Warning alert!.', ['class' => 'font-medium']),
                     ' Change a few things up and try submitting again.',
                 )
                 ->cookbook('default', 'warning')

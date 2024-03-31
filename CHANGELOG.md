@@ -6,3 +6,4 @@
 - Enh #2: Add dropdown cookbook selector `language` and toggle cookbok `selectorLanguage` classes (@terabytesoftw)
 - Enh #3: Add toggle cookbook `selectorTheme` class (@terabytesoftw)
 - Enh #4: Update last change `php-forge/awesome-widget` (@terabytesoftw)
+- Bug #5: Remove `ui-awesome/html` and update dependencies `composer.json` (@terabytesoftw)
